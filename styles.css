@@ -1,0 +1,7 @@
+.header {
+    display: flex;
+    font-weight: 800;
+    font-size: x-large;
+    background-color: black;
+    color: rgb(226, 226, 105);
+}
