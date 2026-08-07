@@ -4,4 +4,55 @@
     font-size: x-large;
     background-color: black;
     color: rgb(226, 226, 105);
+    margin-bottom: 50px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.additional-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.img-text-container {
+    display: flex;
+}
+
+.img-text-element {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calendar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.contact-us {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-us-block {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+img {
+    width: 400px;
+    height: 400px;
 }
