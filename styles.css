@@ -1,18 +1,35 @@
- * {
+ body {
     box-sizing: border-box;
+    background-color: beige;
+    font-family: "Lucida Console", Monaco, monospace;
 }
 
 .header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-weight: 800;
-    font-size: x-large;
+    font-size: large;
     background-color: black;
     color: rgb(226, 226, 105);
     margin-bottom: 50px;
 }
 
+
+.header-links {
+    display: flex;
+    gap: 32px;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(226, 226, 105);
+}
+
 .hero {
     display: flex;
+    padding: 32px;
     justify-content: center;
     border: 1px solid black;
     margin-bottom: 50px;
@@ -88,4 +105,9 @@ img {
 
 iframe {
     margin-bottom: 50px;
+}
+
+#email {
+    color: blue;
+    text-decoration: underline;
 }
