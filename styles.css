@@ -1,5 +1,7 @@
- body {
+body {
     box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
     background-color: beige;
     font-family: "Lucida Console", Monaco, monospace;
 }
@@ -20,6 +22,7 @@
     display: flex;
     gap: 32px;
     margin-right: 20px;
+    font-weight: 400;
 }
 
 a {
@@ -37,9 +40,10 @@ a {
 }
 
 .hero-info {
-    display: block;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .additional-info {
     display: flex;
@@ -53,6 +57,7 @@ a {
 
 .img-text-container {
     display: flex;
+    justify-content: center;
     gap: 100px;
 }
 
@@ -73,7 +78,7 @@ a {
 }
 
 .calendar-info {
-    display: block;
+    display: flex;
     text-align: center;
 }
 
@@ -99,8 +104,8 @@ a {
 }
 
 img {
-    width: 400px;
-    height: 400px;
+    width: 250px;
+    height: 250px;
 }
 
 iframe {
@@ -110,4 +115,48 @@ iframe {
 #email {
     color: blue;
     text-decoration: underline;
+}
+
+
+@media (max-width: 1023px) {
+    body {
+        width: 100vw;
+        position: absolute;
+    }
+    
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        flex-wrap: wrap;
+    }
+
+    .additional-info {
+        flex-wrap: wrap;
+    }
+
+    .img-text-container {
+        flex-wrap: wrap;
+    }
+
+    .calendar {
+        flex-wrap: wrap;
+    }
+
+    .calendar-info {
+        flex-wrap: wrap;
+    }
+
+    .contact-us {
+        flex-wrap: wrap;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 320px) {
+    /* ...For extra-small devices...etc. */
 }
