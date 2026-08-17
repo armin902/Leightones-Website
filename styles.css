@@ -60,16 +60,18 @@ a {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     margin-bottom: 50px;
-   background-color: rgba(20 220 227 / 36%)
+    background-color: rgba(20 220 227 / 36%);
 
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
 }
 
 .img-text-container {
     display: flex;
-    justify-content: center;
-    gap: 100px;
 }
 
 .img-text-element {
@@ -77,6 +79,7 @@ a {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    flex: 1;
 }
 
 .calendar {
@@ -86,6 +89,7 @@ a {
     align-items: center;
     border: 1px solid black;
     margin-bottom: 50px;
+    background-image: url("https://dustinmcgrewphoto.com/cdn/shop/files/SY308913-Edit-2.jpg?v=1701367483");
 }
 
 .calendar-info {
