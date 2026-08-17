@@ -37,7 +37,6 @@ a {
     border: 1px solid black;
     margin-bottom: 50px;
     gap: 32px;
-
     background-image: url("https://wallpapers.com/images/featured/music-notes-background-094jpwqvx4x923th.jpg");
     background-size: cover;
     background-position: center;
@@ -61,7 +60,8 @@ a {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 50px;
-    background-color: rgba(20 220 227 / 36%);
+    background: #09e2ed;
+    background: linear-gradient(151deg, rgba(9, 226, 237, 1) 0%, rgba(109, 197, 222, 1) 39%, rgba(251, 255, 0, 1) 100%);
 
 }
 
@@ -89,12 +89,28 @@ h2 {
     align-items: center;
     border: 1px solid black;
     margin-bottom: 50px;
+    padding: 32px;
     background-image: url("https://dustinmcgrewphoto.com/cdn/shop/files/SY308913-Edit-2.jpg?v=1701367483");
 }
 
+
 .calendar-info {
     display: flex;
-    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.google-calendar {
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
 }
 
 .contact-us {
@@ -132,8 +148,15 @@ iframe {
     text-decoration: underline;
 }
 
+@media (min-width: 1024px) {
+    .google-calendar {
+        width: 100%;
+    }
+}
 
-@media (max-width: 1023px) {
+/* Widths that fall around a smaller laptop --> tablet */
+
+@media (max-width: 1023px) and (min-width: 490px) {
     body {
         width: 100vw;
         position: absolute;
@@ -163,6 +186,10 @@ iframe {
         flex-wrap: wrap;
     }
 
+    .google-calendar {
+        width: 100%;
+    }
+
     .contact-us {
         flex-wrap: wrap;
     }
@@ -172,6 +199,149 @@ iframe {
     }
 }
 
-@media (min-width: 320px) {
-    /* ...For extra-small devices...etc. */
+/* Phone sizes */
+
+@media (max-width: 489px) and (min-width: 395px) {
+     body {
+        width: 100vw;
+        position: absolute;
+    }
+    
+    .header {
+        flex-wrap: wrap;
+        font-size: 4.1vw;
+    }
+
+    .hero {
+        flex-wrap: wrap;
+    }
+
+    .additional-info {
+        flex-wrap: wrap;
+    }
+
+    .img-text-container {
+        flex-wrap: wrap;
+    }
+
+    .calendar {
+        flex-wrap: wrap;
+    }
+
+    .calendar-info {
+        flex-wrap: wrap;
+    }
+
+    .google-calendar {
+        width: 100%;
+    }
+
+    .contact-us {
+        flex-wrap: wrap;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 394px) and (min-width: 321px) {
+
+    body {
+        width: 100vw;
+        position: absolute;
+    }
+    
+    .header {
+        flex-wrap: wrap;
+        font-size: 4.1vw;
+    }
+
+    .hero {
+        flex-wrap: wrap;
+    }
+
+    .additional-info {
+        flex-wrap: wrap;
+    }
+
+    .img-text-container {
+        flex-wrap: wrap;
+    }
+
+    .calendar {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .calendar-info {
+        flex-wrap: wrap;
+    }
+
+    .google-calendar {
+        width: 100%;
+    }
+
+    .contact-us {
+        flex-wrap: wrap;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+}
+
+/* Absolute bare-min of device width */
+@media (max-width: 320px) {
+    body {
+        width: 120vw;
+        position: absolute;
+    }
+    
+    .header {
+        flex-wrap: wrap;
+        font-size: 4.1vw;
+    }
+
+    .header-links {
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        flex-wrap: wrap;
+    }
+
+    .additional-info {
+        flex-wrap: wrap;
+    }
+
+    .img-text-container {
+        flex-wrap: wrap;
+    }
+
+    .calendar {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .calendar-info {
+        flex-wrap: wrap;
+    }
+
+    .google-calendar {
+        width: 100%;
+    }
+
+    .contact-us {
+        flex-wrap: wrap;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
 }
