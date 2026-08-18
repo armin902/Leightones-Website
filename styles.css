@@ -57,6 +57,15 @@ a {
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     color: rgb(0, 0, 0);
+    border: 1px solid white;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+.hero-img {
+    border: 1px solid white;
 }
 
 
