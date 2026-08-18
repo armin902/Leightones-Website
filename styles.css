@@ -30,6 +30,7 @@ a {
     color: rgb(226, 226, 105);
 }
 
+
 .hero {
     display: flex;
     padding: 32px;
@@ -131,8 +132,13 @@ h2 {
     justify-content: center;
     align-items: center;
     border: 1px solid black;
+    padding: 10px;
     background-color: black;
     color: white;
+}
+
+.copyright-year {
+    display: flex;
 }
 
 img {
