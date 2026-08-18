@@ -1,2 +1,2 @@
 # Leightones-Website
-Website that displays information about The Leightones, a jazz band.
+Landing page for The Leightones, a jazz trio based in Pittsburgh, PA.
