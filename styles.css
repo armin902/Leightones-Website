@@ -141,8 +141,15 @@ h2 {
     color: white;
 }
 
-.copyright-year {
-    display: flex;
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: #09e2ed;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
 }
 
 img {
