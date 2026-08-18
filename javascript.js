@@ -8,6 +8,7 @@ copyright.textContent = "© " + updateCopyrightYear().toString() + " The Leighto
 
 const buttonScrollTop = document.querySelector(".scroll-to-top");
 
+
 buttonScrollTop.addEventListener("click", () => {
     window.scrollTo({top: 0, behavior: "smooth"});
 });
@@ -16,7 +17,7 @@ buttonScrollTop.addEventListener("click", () => {
 document.addEventListener("scroll", () => {
     const currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
     const halfwayPoint = window.innerHeight * 0.5;
-    if(scrollDiff > halfwayPoint) {
+    if(currentScroll > halfwayPoint) {
         buttonScrollTop.style.display = "block";
     } else {
         buttonScrollTop.style.display = "none";

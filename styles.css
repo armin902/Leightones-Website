@@ -153,8 +153,23 @@ h2 {
 }
 
 img {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#lts {
+    object-position: 0% 30%;
+    border: 2px solid white;
+}
+
+#arm {
+    border: 2px solid white;
+}
+
+#jorm {
+    object-position: 0% 0%;
+    border: 2px solid white;
 }
 
 iframe {
